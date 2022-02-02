@@ -1,0 +1,340 @@
+:root {
+    --main-text-color: #fff;
+    --secondary-color: #000000b8;
+    --bar_grdEnd: #d9a000;
+    --bar_grdStart: rgb(0 0 0 / 0%);
+  }
+  
+  @font-face {
+    font-family: "Normal";
+    src: url("../SourceHanSansCN-Normal.otf");
+  }
+  
+  #background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  
+  .secondaryImage {
+    max-width: 80%;
+    position: fixed;
+    bottom: 0;
+    left: 10%;
+    display: block;
+    text-align: center;
+    z-index: -1;
+  }
+  
+  .secondaryImage img {
+    width: 100%;
+  }
+  
+  .btn-secondary,
+  .btn-secondary:hover,
+  .btn-secondary:focus {
+    color: #333;
+    text-shadow: none;
+  }
+  
+  body {
+    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+  }
+  
+  .cover-container {
+    max-width: 42em;
+  }
+  
+  .nav-masthead .nav-link {
+    padding: 0.25rem 0;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+    border-bottom: 0.25rem solid transparent;
+  }
+  
+  .nav-masthead .nav-link:hover,
+  .nav-masthead .nav-link:focus {
+    border-bottom-color: rgba(255, 255, 255, 0.25);
+  }
+  
+  .nav-masthead .nav-link + .nav-link {
+    margin-left: 1rem;
+  }
+  
+  .nav-masthead .active {
+    color: #fff;
+    border-bottom-color: #fff;
+  }
+  
+  .bg-custom {
+    background-image: url(https://presale-rebels.art/assets/bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .logo {
+    margin-bottom: 5px !important;
+  }
+  
+  .logo {
+    margin-top: 15px;
+    max-width: 320px;
+  }
+  
+  .social-links a {
+    font-size: 2em;
+    color: var(--main-text-color);
+    margin: 10px;
+  }
+  
+  .btn-rounded {
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    background: 0 0;
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+    text-align: center;
+    padding: 5px 20px;
+    margin-top: 10px;
+    display: inline-block;
+    overflow: hidden;
+    border: 5px solid var(--main-text-color);
+    text-shadow: 0 0.05rem 0.1rem rgb(0 0 0/50%);
+    text-decoration: none;
+  }
+  
+  .btn-rounded:hover {
+    text-decoration: none;
+    color: var(--main-text-color);
+  }
+  
+  .btn-rounded.full {
+    background: linear-gradient(90deg, #a60000, #002381 50%, #00ff81);
+    transition: all 0.3s ease-in-out;
+    color: #000;
+    margin-top: 0 !important;
+  }
+  
+  .btn-rounded.full:hover {
+    color: #fff;
+  }
+  
+  .minter {
+    border: 5px solid var(--main-text-color);
+    background: var(--secondary-color);
+    padding: 30px 0;
+  }
+  
+  .font {
+    font-family: "Normal";
+  }
+  
+  .minter .lead.first {
+    font-style: italic;
+    font-weight: 700;
+  }
+  
+  .minter h1 {
+    color: var(--main-text-color);
+  }
+  
+  .minter h1 span.outline {
+    color: #ff0;
+  }
+  
+  .minter .nftSelector .amountSelector {
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+    margin: 0 20px;
+  }
+  
+  .minter .nftSelector .count {
+    color: #fff;
+    font-size: 45px;
+    font-weight: 700;
+    margin-top: 10px;
+  }
+  
+  .color {
+    color: var(--main-text-color);
+  }
+  
+  .minter .basket {
+    color: var(--main-text-color);
+    margin-top: 20px;
+    font-weight: 700;
+  }
+  
+  .minter .cta .connect,
+  .minter .cta .mint {
+    display: block;
+    margin: 0 auto;
+    width: 240px;
+  }
+  .minter .cta .mint.disable {
+    cursor: no-drop;
+    color: #838383;
+    border-color: #838383;
+  }
+  .minter .cta .mint.enable {
+    cursor: pointer;
+    border-color: var(--main-text-color);
+  }
+  
+  .walletAddress {
+    color: var(--main-text-color);
+    font-weight: 700;
+    margin-top: 20px;
+    font-style: italic;
+  }
+  
+  .myModal {
+    background-color: rgb(0, 0, 0, 0.5);
+  }
+  
+  .myModal .modal-content {
+    background-color: #000;
+    border: 5px solid var(--main-text-color);
+  }
+  
+  .myModal .modal-content a {
+    color: #fff;
+  }
+  
+  .myModal .modal-content .info {
+    font-weight: 700;
+    color: var(--main-text-color);
+  }
+  
+  .myModal .modal-content .purchased {
+    font-size: 5em;
+    margin: 20px;
+    color: var(--main-text-color);
+  }
+  
+  .mmLink {
+    text-decoration: none;
+  }
+  
+  .progr-container {
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    height: 60px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 13px;
+  }
+  .prgcont {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    height: 85%;
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .prgcont .text-glitch {
+    z-index: 100;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .bar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.1);
+    height: 30px;
+    width: 100%;
+    border-radius: 20px;
+    border: 2px solid #fff;
+  }
+  .bar-done {
+    font-weight: bolder;
+    color: #333;
+    height: 100%;
+    background: linear-gradient(to left, var(--bar_grdEnd), var(--bar_grdStart));
+    border-radius: 20px;
+    display: grid;
+    text-align: right;
+  
+    width: 0;
+    box-shadow: 0 0 3px -5px #1e7054, 0px 3px 150px #033222;
+    transition: width 0.5s ease;
+  }
+  
+  .progr-span {
+    margin-right: 0.3rem;
+    margin-top: 0.2rem;
+  }
+  .up {
+    justify-content: space-between;
+  }
+  .up,
+  .down {
+    width: 100%;
+    display: flex;
+    font-size: 13px;
+    font-family: var(--fontH);
+  }
+  .down {
+    margin-top: auto;
+  }
+  @media (max-width: 960px) {
+    .up,
+    .down {
+      font-size: 11px;
+    }
+  }
+  
+  .max {
+    margin-left: 0;
+  }
+  .obj {
+    position: absolute;
+    width: 100%;
+    height: 125%;
+    transform: translate(-15px, -5px);
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 0.1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  @media (max-width: 960px) {
+    .obj {
+      transform: translate(-16px, -3px);
+    }
+    .obj2 {
+      transform: translate(-23px, 12px);
+    }
+  }
+  @media (max-width: 705px) {
+    .obj {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -7px);
+    }
+    .obj2 {
+      transform: translate(-15px, 12px);
+    }
+  }
+  
+  body {
+      overflow-y: scroll;
+      overflow-x: scroll;
+  }
